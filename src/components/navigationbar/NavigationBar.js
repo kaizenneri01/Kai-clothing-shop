@@ -1,4 +1,5 @@
 import React from "react";
+import "./navbar-styles.css";
 
 const NavigationBar = () => {
   return (
@@ -8,8 +9,8 @@ const NavigationBar = () => {
       </div>
       <div className="nav__containerlist">
         <ul className="nav__gender">
-          <li>MEN</li>
-          <li>WOMEN</li>
+          <li className="nav__li">MEN</li>
+          <li className="nav__litwo">WOMEN</li>
         </ul>
 
         <ul className="nav__option">

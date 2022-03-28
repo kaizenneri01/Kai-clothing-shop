@@ -1,0 +1,41 @@
+.nav__containerlist {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.nav__gender {
+  display: flex;
+}
+.nav__gender > li {
+  margin-right: 0.2rem;
+  list-style: none;
+  color: #dddada;
+  cursor: pointer;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__li {
+  border-right: 1px solid #dddada;
+  padding-right: 0.5rem;
+}
+.nav__litwo {
+  border-left: 1px solid #dddada;
+  padding-left: 0.5rem;
+}
+
+.nav__gender > li:hover {
+  font-weight: bolder;
+}
+
+.nav__option {
+  display: flex;
+}
+.nav__option > li {
+  margin-right: 1rem;
+  list-style: none;
+  color: #dddada;
+  cursor: pointer;
+}
