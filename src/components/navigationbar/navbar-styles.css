@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s linear;
 }
 .nav__li {
   border-right: 1px solid #dddada;
@@ -28,6 +29,7 @@
 
 .nav__gender > li:hover {
   font-weight: bolder;
+  color: rgb(214, 172, 35);
 }
 
 .nav__option {
