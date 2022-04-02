@@ -33,14 +33,19 @@
 
 .nav__option {
   display: flex;
+  margin-right: 3rem;
 }
 .nav__option > li {
-  margin-right: 2rem;
+  margin-right: 1rem;
   list-style: none;
   color: #dddada;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+}
+
+.nav__option > li:nth-child(1) {
+  margin-right: 3rem;
 }
 
 .nav__option > li::before {
