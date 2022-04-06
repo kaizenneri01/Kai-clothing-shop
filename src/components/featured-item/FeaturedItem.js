@@ -1,21 +1,21 @@
 import React from "react";
 import "./featured-item-styles.css";
+import FeaturedData from "../../pages/homepage/Featured_item_data";
 
 const FeaturedItem = () => {
   return (
     <div className="featured__item">
       <div className="featured__font">FEATURED</div>
       <div className="featured__container">
-        <div className="featured__picture">
-          <img
-            src="https://i.pinimg.com/originals/62/98/b0/6298b026a65cf80bcf9dce061e9b79c9.png"
-            alt="tshirt"
-          />
-          <div className="featured__text">
-            <p>PLAIN T-SHIRT</p>
-            <p>SEE ALL</p>
+        {FeaturedData.map((info, indx) => (
+          <div key={indx} className="featured__picture">
+            <img src={info.image} alt="tshirt" />
+            <div className="featured__text">
+              <p>{info.description}</p>
+              <p>{info.text}</p>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

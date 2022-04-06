@@ -3,8 +3,10 @@ import "./homepage-styles.css";
 import FeaturedItem from "../../components/featured-item/FeaturedItem";
 import NavigationBar from "../../components/navigationbar/NavigationBar";
 import BlackJacket from "./blackjacket.png";
+import FeaturedData from "./Featured_item_data";
 
 const Homepage = () => {
+  console.log(FeaturedData);
   return (
     <div>
       <div>

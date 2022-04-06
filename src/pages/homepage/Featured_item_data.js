@@ -2,7 +2,7 @@ const FEATURED_DATA = [
   {
     image:
       "https://i.pinimg.com/originals/62/98/b0/6298b026a65cf80bcf9dce061e9b79c9.png",
-    description: "PLAIN T_SHIRT",
+    description: "COLORED T_SHIRT",
     text: "SEE ALL",
   },
   {
@@ -13,7 +13,9 @@ const FEATURED_DATA = [
   {
     image:
       "https://www.pngplay.com/wp-content/uploads/12/Oversized-T-Shirt-PNG-Photos.png",
-    description: "PLAIN T_SHIRT",
+    description: "OVERSIZE SHIRT",
     text: "SEE ALL",
   },
 ];
+
+export default FEATURED_DATA;
