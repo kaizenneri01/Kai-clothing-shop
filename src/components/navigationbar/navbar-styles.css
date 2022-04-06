@@ -35,7 +35,13 @@
   display: flex;
   margin-right: 3rem;
 }
-.nav__option > li {
+.li {
+  color: #dddada;
+  text-decoration: none;
+  margin-right: 3px;
+}
+
+.nav__option li {
   margin-right: 1rem;
   list-style: none;
   color: #dddada;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./navbar-styles.css";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
   return (
@@ -14,7 +15,11 @@ const NavigationBar = () => {
         </ul>
 
         <ul className="nav__option">
-          <li>STORE</li>
+          <nav className="nav__option">
+            <Link to="/Store" className="li">
+              STORE
+            </Link>
+          </nav>
           <li>SIGN IN</li>
           <li>SIGN UP</li>
         </ul>
