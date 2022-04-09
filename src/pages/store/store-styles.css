@@ -56,3 +56,16 @@
   color: rgb(240, 239, 239);
   z-index: -1;
 }
+.store__button {
+  background-color: #deae03;
+  border: none;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-weight: bolder;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}

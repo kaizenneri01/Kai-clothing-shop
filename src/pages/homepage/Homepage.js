@@ -4,13 +4,18 @@ import FeaturedItem from "../../components/featured-item/FeaturedItem";
 import NavigationBar from "../../components/navigationbar/NavigationBar";
 import BlackJacket from "./blackjacket.png";
 import WomenJacket from "./women.png";
+import SignIn from "../../components/sign-in/SignIn";
 
 const Homepage = () => {
   const [gender, setGender] = useState("men");
-  useEffect(() => {}, [gender]);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    console.log(open);
+  }, [open]);
   return (
     <div>
-      <NavigationBar />
+      <NavigationBar open={open} handleOpen={(e) => setOpen(e)} />
       <ul className="home__gender">
         <li
           style={{
@@ -29,6 +34,7 @@ const Homepage = () => {
           WOMEN
         </li>
       </ul>
+      <SignIn open={open} onClose={() => setOpen(false)} />
 
       <div className="home__mainpage">
         <img

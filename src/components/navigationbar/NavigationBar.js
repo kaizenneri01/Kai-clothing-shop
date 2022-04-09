@@ -2,7 +2,7 @@ import React from "react";
 import "./navbar-styles.css";
 import { Link } from "react-router-dom";
 
-const NavigationBar = () => {
+const NavigationBar = ({ open, handleOpen }) => {
   return (
     <div>
       <div className="nav__logo">
@@ -15,7 +15,7 @@ const NavigationBar = () => {
               STORE
             </Link>
           </nav>
-          <li>SIGN IN</li>
+          <li onClick={() => handleOpen(!open)}>SIGN IN</li>
           <li>SIGN UP</li>
         </ul>
       </div>

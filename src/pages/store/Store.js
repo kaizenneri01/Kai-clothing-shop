@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./store-styles.css";
-import StorePicture from "./streetpic.jpg";
+
 import NavigationBar from "../../components/navigationbar/NavigationBar";
+import { useNavigate } from "react-router-dom";
 
 const Store = () => {
   const [data, setData] = useState([
@@ -37,6 +38,8 @@ const Store = () => {
     },
   ]);
 
+  let navigate = useNavigate();
+
   return (
     <div>
       <NavigationBar />
@@ -46,12 +49,22 @@ const Store = () => {
       </div>
 
       <div className="store__container">
-        {data.map((item) => (
-          <div className="store__box">
+        {data.map((item, index) => (
+          <div key={index} className="store__box">
             <img className="store__image" src={item.image} alt="cloth" />
             <h1 className="store__text">{item.description}</h1>
           </div>
         ))}
+      </div>
+      <div>
+        <button
+          className="store__button"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          BACK
+        </button>
       </div>
     </div>
   );
