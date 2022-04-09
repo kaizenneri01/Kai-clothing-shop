@@ -1,5 +1,16 @@
 .store__line {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+
+.store__font {
+  color: #a6a6a6;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.store__category {
+  color: #a6a6a6;
+  text-align: center;
+  margin-top: 3rem;
 }
 .store__container {
   display: flex;
@@ -14,47 +25,34 @@
 
 .store__box {
   width: 300px;
-  height: 300px;
+  height: 400px;
   position: relative;
-  border: 2px yellow solid;
+  border: 2px #deae03 solid;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   overflow: hidden;
+  cursor: pointer;
 }
-.store__box::before {
-  content: "OPEN";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  padding-right: 1rem;
-  font-size: 2rem;
-  color: black;
-  position: absolute;
-  top: 0;
-  left: -200%;
-  height: 100%;
-  background-color: rgb(233, 233, 233);
-  border-radius: 25%;
-  width: 200%;
-  transition: 0.5s;
-}
-.store__box:hover::before {
-  left: -45%;
-}
+
 .store__image {
   height: 100%;
   width: 100%;
   position: absolute;
   bottom: 0;
   opacity: 0.3;
-  z-index: -1;
+  transition: 3s linear;
+}
+
+.store__image:hover {
+  transform: scale(1.5);
+  opacity: 1;
 }
 
 .store__text {
-  color: rgb(218, 218, 218);
+  color: rgb(240, 239, 239);
+  z-index: -1;
 }
