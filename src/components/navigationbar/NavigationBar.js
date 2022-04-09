@@ -9,13 +9,8 @@ const NavigationBar = () => {
         <img src="#" alt="logo" />
       </div>
       <div className="nav__containerlist">
-        <ul className="nav__gender">
-          <li className="nav__li">MEN</li>
-          <li className="nav__litwo">WOMEN</li>
-        </ul>
-
         <ul className="nav__option">
-          <nav className="nav__option">
+          <nav className="nav__optionStore">
             <Link to="/Store" className="li">
               STORE
             </Link>

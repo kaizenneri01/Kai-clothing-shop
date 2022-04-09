@@ -1,3 +1,29 @@
+.home__gender {
+  display: flex;
+  margin-left: auto;
+  padding-left: 3rem;
+}
+
+.home__gender > li {
+  color: #d8d8d8;
+  list-style: none;
+  cursor: pointer;
+}
+
+.home__gender > li:active {
+  color: #deae03;
+}
+
+.home__gender > li:nth-child(1) {
+  border-right: 2px white solid;
+  margin-right: 2px;
+  padding: 2px 10px;
+}
+.home__gender > li:nth-child(2) {
+  border-left: 2px white solid;
+  margin-left: 2px;
+  padding: 2px 10px;
+}
 .home__mainpage {
   display: flex;
   justify-content: center;
@@ -10,7 +36,21 @@
   height: 80vh;
 }
 
-.home__font {
+.home__fontmen {
+  font-weight: bold;
+  font-size: 6rem;
+  overflow-wrap: break-word;
+  inline-size: 40rem;
+  color: #a6a6a6;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s linear;
+}
+.home__fontmen:hover {
+  color: #deae03;
+  filter: drop-shadow(0px 0px 2px #deae03);
+}
+.home__fontwomen {
   font-weight: bold;
   font-size: 6rem;
   overflow-wrap: break-word;
@@ -21,9 +61,9 @@
   transition: all 1s linear;
   overflow: hidden;
 }
-.home__font:hover {
-  color: #deae03;
-  filter: drop-shadow(0px 0px 2px #deae03);
+.home__fontwomen:hover {
+  color: #0beb68;
+  filter: drop-shadow(0px 0px 2px #0beb68);
 }
 
 .home__btn1 {

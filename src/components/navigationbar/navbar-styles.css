@@ -1,44 +1,35 @@
 .nav__containerlist {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   margin-left: 2rem;
 }
-
-.nav__gender {
-  display: flex;
-}
-.nav__gender > li {
-  margin-right: 0.2rem;
-  list-style: none;
-  color: #dddada;
-  cursor: pointer;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav__li {
-  border-right: 1px solid #dddada;
-  padding-right: 0.5rem;
-}
-.nav__litwo {
-  border-left: 1px solid #dddada;
-  padding-left: 0.5rem;
-}
-
-.nav__gender > li:hover {
-  font-weight: bolder;
-  color: rgb(214, 172, 35);
-}
-
 .nav__option {
   display: flex;
   margin-right: 3rem;
+}
+.nav__optionStore {
+  margin-right: 3rem;
+  overflow: hidden;
 }
 .li {
   color: #dddada;
   text-decoration: none;
   margin-right: 3px;
+  position: relative;
+}
+
+.li::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: -100%;
+  height: 10%;
+  width: 100%;
+  background-color: rgb(214, 172, 35);
+  transition: 0.5s;
+}
+.li:hover::before {
+  left: 0;
 }
 
 .nav__option li {
@@ -57,7 +48,7 @@
 .nav__option > li::before {
   content: "";
   position: absolute;
-  top: 60%;
+  top: 90%;
   left: -100%;
   height: 10%;
   width: 100%;
