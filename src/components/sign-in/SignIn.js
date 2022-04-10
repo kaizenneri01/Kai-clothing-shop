@@ -9,23 +9,20 @@ const SignIn = ({ open, onClose }) => {
         <img src="#" alt="logo" />
         <form className=" signIn__form">
           <label>
-            {" "}
-            Username:
-            <input />{" "}
+            Email:
+            <input type="email" />
           </label>
           <label>
-            {" "}
             Password:
-            <input />{" "}
+            <input type="password" />
           </label>
-          <label>
-            {" "}
-            Remeber me:
-            <input />{" "}
-          </label>
+
+          <button className="signIn__login">LOG IN</button>
         </form>
 
-        <button onClick={onClose}>close</button>
+        <button onClick={onClose} className="signIn__close">
+          X
+        </button>
       </div>
     </div>
   );
