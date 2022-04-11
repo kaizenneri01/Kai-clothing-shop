@@ -28,6 +28,28 @@ const Jacket = () => {
       title: "ORANGE HOODIE JACKET",
       price: "25$",
     },
+    {
+      image: "https://pngimg.com/uploads/jacket/jacket_PNG8058.png",
+      title: "RED WINTER JACKET",
+      price: "35$",
+    },
+    {
+      image:
+        "https://purepng.com/public/uploads/large/purepng.com-jacketclothingjacketfashion-men-dress-wear-cloth-coat-jacket-631522326867zvwfe.png",
+      title: "BLUE SPORTS JACKET",
+      price: "20$",
+    },
+    {
+      image:
+        "https://www.pngkey.com/png/full/89-896489_orange-jacket-png-image-jacket-png.png",
+      title: "ORANGE WINTER JACKET",
+      price: "45$",
+    },
+    {
+      image: "https://www.downloadclipart.net/large/jacket-png-clipart.png",
+      title: "BLACK DRY FIT JACKET",
+      price: "30$",
+    },
   ]);
   return (
     <div>
