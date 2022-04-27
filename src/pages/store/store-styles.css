@@ -54,7 +54,12 @@
 
 .store__text {
   color: rgb(240, 239, 239);
-  z-index: -1;
+  z-index: 1;
+}
+.store__link {
+  color: aliceblue;
+  opacity: 0.8;
+  text-decoration: none;
 }
 .store__button {
   background-color: #deae03;
