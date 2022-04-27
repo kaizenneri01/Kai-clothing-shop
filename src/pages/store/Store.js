@@ -31,7 +31,7 @@ const Store = () => {
         "https://images.unsplash.com/photo-1527718641255-324f8e2d0421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
       link: (
         <Link className="store__link" to="/Store/T-shirt">
-          T-SHIRT
+          PRINTED TSHIRT
         </Link>
       ),
     },

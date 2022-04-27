@@ -1,6 +1,6 @@
 import React from "react";
 import "./featured-item-styles.css";
-import FeaturedData from "../../pages/homepage/Featured_item_data";
+import FeaturedData from "./Featured_item_data";
 
 const FeaturedItem = () => {
   return (

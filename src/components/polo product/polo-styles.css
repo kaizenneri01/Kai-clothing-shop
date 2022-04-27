@@ -1,0 +1,11 @@
+.polo__font {
+  color: #a6a6a6;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+.polo__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
