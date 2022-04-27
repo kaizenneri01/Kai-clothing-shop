@@ -54,7 +54,7 @@ const Suit = () => {
     <div>
       <NavigationBar />
       <div className="suit__font">
-        <h1>JACKET</h1>
+        <h1>SUITS</h1>
       </div>
       <div className="suit__container">
         {suitData.map((data, index) => (
