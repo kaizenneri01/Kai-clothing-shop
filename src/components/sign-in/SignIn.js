@@ -6,6 +6,9 @@ const SignIn = ({ open, onClose }) => {
   return (
     <div className="signIn__overlay">
       <div className="signIn__modal">
+        <button onClick={onClose} className="signIn__close">
+          X
+        </button>
         <img src="#" alt="logo" />
         <form className=" signIn__form">
           <label>
@@ -19,10 +22,6 @@ const SignIn = ({ open, onClose }) => {
 
           <button className="signIn__login">LOG IN</button>
         </form>
-
-        <button onClick={onClose} className="signIn__close">
-          X
-        </button>
       </div>
     </div>
   );
