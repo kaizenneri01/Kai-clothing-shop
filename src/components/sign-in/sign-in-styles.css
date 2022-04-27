@@ -19,6 +19,9 @@
   flex-direction: column;
   align-items: center;
 }
+.sign__logo {
+  height: 5rem;
+}
 .signIn__form {
   box-sizing: border-box;
   padding: 60px;

@@ -1,7 +1,8 @@
 .home__gender {
   display: flex;
   margin-left: auto;
-  padding-left: 3rem;
+  padding-left: 8rem;
+  margin-top: 2rem;
 }
 
 .home__gender > li {

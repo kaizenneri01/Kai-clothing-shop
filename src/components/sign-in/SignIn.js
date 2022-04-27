@@ -1,5 +1,6 @@
 import React from "react";
 import "./sign-in-styles.css";
+import logo from "./kai clothing.png";
 
 const SignIn = ({ open, onClose }) => {
   if (!open) return null;
@@ -9,7 +10,7 @@ const SignIn = ({ open, onClose }) => {
         <button onClick={onClose} className="signIn__close">
           X
         </button>
-        <img src="#" alt="logo" />
+        <img className="sign__logo" src={logo} alt="logo" />
         <form className=" signIn__form">
           <label>
             Email:
