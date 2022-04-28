@@ -12,24 +12,24 @@ const SignUp = ({ suopen, suonClose }) => {
         </button>
         <img className="signup__logo" src={logo} alt="logo" />
         <form className=" signup__form">
-          <label>
+          <label className="signup__label">
             Username:
-            <input type="email" />
+            <input className="signup__input" type="email" />
           </label>
-          <label>
+          <label className="signup__label">
             Email address:
-            <input type="password" />
+            <input className="signup__input" type="password" />
           </label>
-          <label>
+          <label className="signup__label">
             password:
-            <input type="email" />
+            <input className="signup__input" type="email" />
           </label>
-          <label>
+          <label className="signup__label">
             Confirm Password:
-            <input type="password" />
+            <input className="signup__input" type="password" />
           </label>
 
-          <button className="signup__login">LOG IN</button>
+          <button className="signup__login">SIGN UP</button>
         </form>
       </div>
     </div>
