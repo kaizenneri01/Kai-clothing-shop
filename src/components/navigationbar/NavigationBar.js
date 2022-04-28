@@ -3,7 +3,12 @@ import "./navbar-styles.css";
 import { Link } from "react-router-dom";
 import logo from "./kai clothing.png";
 
-const NavigationBar = ({ open, handleOpen }) => {
+const NavigationBar = ({
+  login,
+  loginHandleOpen,
+  signup,
+  signupHandleOpen,
+}) => {
   return (
     <div className="nav__containerlist">
       <img className="nav__logo" src={logo} alt="logo" />
@@ -13,8 +18,8 @@ const NavigationBar = ({ open, handleOpen }) => {
             STORE
           </Link>
         </nav>
-        <li onClick={() => handleOpen(!open)}>SIGN IN</li>
-        <li>SIGN UP</li>
+        <li onClick={() => loginHandleOpen(!login)}>SIGN IN</li>
+        <li onClick={() => signupHandleOpen(!signup)}> SIGN UP</li>
       </ul>
     </div>
   );

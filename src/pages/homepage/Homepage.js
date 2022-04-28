@@ -1,21 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./homepage-styles.css";
 import FeaturedItem from "../../components/featured-item/FeaturedItem";
 import NavigationBar from "../../components/navigationbar/NavigationBar";
 import BlackJacket from "./blackjacket.png";
 import WomenJacket from "./women.png";
 import SignIn from "../../components/sign-in/SignIn";
+import SignUp from "../../components/sign-up/SignUp";
 
 const Homepage = () => {
   const [gender, setGender] = useState("men");
-  const [open, setOpen] = useState(false);
+  const [signinOpen, setSigninOpen] = useState(false);
+  const [signupOpen, setSignupOpen] = useState(false);
 
-  useEffect(() => {
-    console.log(open);
-  }, [open]);
   return (
     <div>
-      <NavigationBar open={open} handleOpen={(e) => setOpen(e)} />
+      <NavigationBar
+        login={signinOpen}
+        loginHandleOpen={(e) => setSigninOpen(e)}
+        signup={signupOpen}
+        signupHandleOpen={(e) => setSignupOpen(e)}
+      />
       <ul className="home__gender">
         <li
           style={{
@@ -34,7 +38,8 @@ const Homepage = () => {
           WOMEN
         </li>
       </ul>
-      <SignIn open={open} onClose={() => setOpen(false)} />
+      <SignIn sopen={signinOpen} sonClose={() => setSigninOpen(false)} />
+      <SignUp suopen={signupOpen} suonClose={() => setSignupOpen(false)} />
 
       <div className="home__mainpage">
         <img

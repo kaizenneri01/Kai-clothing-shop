@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 .featured__picture {
   display: flex;
